@@ -11,7 +11,7 @@ def send_to_chatgpt(command):
         "Authorization": f"Bearer {CHATGPT_API_KEY}"
     }
     payload = {
-        "model": "gpt-3.5-turbo",
+         model: "gpt-4o",
         "messages": [{"role": "user", "content": command}],
     }
     response = requests.post(url, headers=headers, json=payload)
