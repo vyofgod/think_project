@@ -44,17 +44,15 @@ pip install -r requirements.txt
 
 ### 3. API Anahtarınızı Ayarlayın
 
-ChatGPT, Gemini ve DeepSeek API'lerini kullanabilmek için geçerli bir API anahtarına ihtiyacınız var. API anahtarlarınızı ilgili platformlardan alarak, bu anahtarları config.py dosyasına ekleyin:
+ChatGPT, Gemini ve DeepSeek API'lerini kullanabilmek için geçerli bir API anahtarına ihtiyacınız var. API anahtarlarınızı ilgili platformlardan alarak, bu anahtarları config.py dosyasına ekleyin.
 
-# config.py
-
-# ChatGPT API anahtarı
+ChatGPT API anahtarı
 CHATGPT_API_KEY = 'anahtarınızı_buraya_yapıştırın'
 
-# Gemini API anahtarı
+Gemini API anahtarı
 GEMINI_API_KEY = 'anahtarınızı_buraya_yapıştırın'
 
-# DeepSeek API anahtarı
+DeepSeek API anahtarı
 DEEPSEEK_API_KEY = 'anahtarınızı_buraya_yapıştırın'
 
 ### 4. Projeyi Çalıştırın
