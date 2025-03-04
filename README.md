@@ -92,5 +92,6 @@ Fork: Depoyu fork’layın.
 Yeni Bir Branch Oluşturun: Özellik eklemek veya hata düzeltmesi yapmak için yeni bir branch oluşturun.
 Pull Request Gönderin: Yaptığınız değişiklikleri proje sahibine göndermek için pull request oluşturun.
 
-📜 Lisans
+
+### 📜 Lisans
 Bu proje, MIT Lisansı altında lisanslanmıştır.
