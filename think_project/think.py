@@ -5,7 +5,7 @@ from prompt_toolkit import prompt
 from prompt_toolkit.styles import Style
 
 def send_to_gemini(command):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAq_t6KpyXpb5INbLtrJvNQCWcpAo00FQU"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=BURAYA_KEYİNİZİ_YAPIŞTIRIN"
     headers = {
         "Content-Type": "application/json"
     }
