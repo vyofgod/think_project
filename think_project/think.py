@@ -4,8 +4,27 @@ import os
 from prompt_toolkit import prompt
 from prompt_toolkit.styles import Style
 
+def send_to_chatgpt(command):
+    url = f"https://api.openai.com/v1/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {CHATGPT_API_KEY}"
+    }
+    payload = {
+        "model": "gpt-3.5-turbo",
+        "messages": [{"role": "user", "content": command}],
+    }
+    response = requests.post(url, headers=headers, json=payload)
+    if response.status_code == 200:
+        response_data = response.json()
+        return response_data['choices'][0]['message']['content']
+    else:
+        print("API Hatası:", response.status_code)
+        print(response.text)
+        return "API çağrısı başarısız oldu."
+
 def send_to_gemini(command):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=BURAYA_KEYİNİZİ_YAPIŞTIRIN"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     headers = {
         "Content-Type": "application/json"
     }
@@ -16,6 +35,23 @@ def send_to_gemini(command):
     if response.status_code == 200:
         response_data = response.json()
         return response_data['candidates'][0]['content']['parts'][0]['text']
+    else:
+        print("API Hatası:", response.status_code)
+        print(response.text)
+        return "API çağrısı başarısız oldu."
+
+def send_to_deepseek(command):
+    url = f"https://api.deepseek.com/v1/ask?key={DEEPSEEK_API_KEY}"
+    headers = {
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "question": command
+    }
+    response = requests.post(url, headers=headers, json=payload)
+    if response.status_code == 200:
+        response_data = response.json()
+        return response_data['answer']
     else:
         print("API Hatası:", response.status_code)
         print(response.text)
@@ -185,6 +221,7 @@ def process_command_wrapper(command):
     if any(trigger in command.lower() for trigger in triggers):
         run_system_command(command)
     else:
+        # Here we send the command to all available AI models.
         result = send_to_gemini(command)
         print(result)
 
