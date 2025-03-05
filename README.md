@@ -78,7 +78,7 @@ Açıklama: ornek.txt dosyasını siler.
 ---
 
 ### Gelişmiş Kullanım;
-Think Project, thing.py dosyasını düzenleyerek daha fazla komut eklemenize ve özelleştirmenize olanak tanır. Komut eşleştirme mekanizması ve API entegrasyonu sayesinde gelişmiş sistem komutlarını da çalıştırabilirsiniz.
+Think Project, think.py dosyasını düzenleyerek daha fazla komut eklemenize ve özelleştirmenize olanak tanır. Komut eşleştirme mekanizması ve API entegrasyonu sayesinde gelişmiş sistem komutlarını da çalıştırabilirsiniz.
 
 ---
 
