@@ -1,6 +1,6 @@
-# Thing Project
+# Think Project
 
-**Thing Project**, bilgisayarınızı sadece bir yapay zeka aracılığıyla kullanmanıza olanak tanıyan, terminal tabanlı bir projedir. Bu proje, yapay zeka komutları ile sistem komutlarını çalıştırmayı, uygulamaları başlatmayı ve dosya işlemleri gerçekleştirmeyi sağlar.
+**Think Project**, bilgisayarınızı sadece bir yapay zeka aracılığıyla kullanmanıza olanak tanıyan, terminal tabanlı bir projedir. Bu proje, yapay zeka komutları ile sistem komutlarını çalıştırmayı, uygulamaları başlatmayı ve dosya işlemleri gerçekleştirmeyi sağlar.
 
 ---
 
@@ -33,8 +33,8 @@ Bilgisayarınızı geleneksel yollarla kullanmak yerine, bir yapay zeka aracıl�
 
 Öncelikle, projeyi bilgisayarınıza klonlayın:
 
-git clone https://github.com/vyofgod/thing_project.git
-cd thing_project
+git clone https://github.com/vyofgod/think_project.git
+cd think_project
 
 ### 2. Bağımlılıkları Yükleyin
 
@@ -59,7 +59,7 @@ DEEPSEEK_API_KEY = 'anahtarınızı_buraya_yapıştırın'
 
 Projeyi başlatmak için aşağıdaki komutu kullanın:
 
-python thing.py
+python think.py
 
 ### 5. Temel komutlar ve kullanım
 
